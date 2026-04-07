@@ -2,6 +2,7 @@ import test, { expect } from '@playwright/test';
 import { CartPage } from '../pages/CartPage';
 import { InventoryPage } from '../pages/InventoryPage';
 import { LoginPage } from '../pages/LoginPage';
+import path from 'path';
 
 test.describe('Login and add item', () => {
     let loginPage: LoginPage;
@@ -10,7 +11,7 @@ test.describe('Login and add item', () => {
     let url = 'https://www.saucedemo.com/';
     let username = 'standard_user';
     let password = 'secret_sauce';
-    let filePath = "C:/Users/BAP/Documents/TechnicalAssessment/tests/data/dataTest.xlsx"
+    const filePath = path.join(__dirname, '../data/dataTest.xlsx');
     let rowNum = 2
 
 
