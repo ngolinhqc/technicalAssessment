@@ -8,8 +8,8 @@ export class BasePage{
         this.page = page;
     }
 
-    async navigateTo(url : string){
-        await this.page.goto(url);
+    async navigateTo(){
+        await this.page.goto('/');
     }
 
     async listItemFile(filePath: string, colNum: number): Promise<string[]>{

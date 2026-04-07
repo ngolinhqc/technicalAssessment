@@ -8,12 +8,11 @@ test.describe('Login and add item', () => {
     let loginPage: LoginPage;
     let inventoryPage: InventoryPage;
     let cartPage: CartPage;
-    let url = 'https://www.saucedemo.com/';
-    let username = 'standard_user';
-    let password = 'secret_sauce';
-    const filePath = path.join(__dirname, '../data/dataTest.xlsx');
+    
+    const filePath = path.join(__dirname, process.env.FILE_PATH!);
     let rowNum = 2
-
+    const username = process.env.USERNAME_TEST!;
+    const password = process.env.PASSWORD_TEST!;
 
     test.beforeEach(async({page}) => {
         loginPage = new LoginPage(page);
@@ -21,7 +20,8 @@ test.describe('Login and add item', () => {
         cartPage = new CartPage(page);
     })
     test.only('Verify add item success', async ({page}) => {
-        await loginPage.navigateTo(url);
+        console.log(filePath);
+        await loginPage.navigateTo();
         await loginPage.login(username, password);
         await inventoryPage.addToCart(filePath, rowNum);
         await inventoryPage.navigateToCart();
