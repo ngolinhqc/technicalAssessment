@@ -19,7 +19,7 @@ test.describe('Login and add item', () => {
         inventoryPage = new InventoryPage(page);
         cartPage = new CartPage(page);
     })
-    test.only('Verify add item success', async ({page}) => {
+    test('Verify add item success', async ({page}) => {
         console.log(filePath);
         await loginPage.navigateTo();
         await loginPage.login(username, password);
