@@ -2,7 +2,17 @@
   "name": "technicalassessment",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test:master": "playwright test --grep @master",
+    "test:sanity": "playwright test --grep @sanity",
+    "test:datadriven": "playwright test --grep @datadriven",
+    "test:master:headed": "playwright test --grep @master --headed",
+    "test:end-to-end": "playwright test --grep @endtoend --headed",
+    "test:regression": "playwright test --grep @regression",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:sanity:debug": "playwright test --grep @sanity --debug",
+    "test:all": "playwright test"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
