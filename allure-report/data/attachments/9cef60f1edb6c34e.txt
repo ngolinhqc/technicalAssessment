@@ -1,0 +1,6 @@
+C:\Users\BAP\Documents\TechnicalAssessment\data\dataTest.xlsx
+Item name:Sauce Labs Backpack
+Item name:Sauce Labs Fleece Jacket
+Item name:Sauce Labs Bike Light
+Item name:Sauce Labs Onesie
+Item name:Test.allTheThings() T-Shirt (Red)

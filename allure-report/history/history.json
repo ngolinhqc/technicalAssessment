@@ -1,1 +1,1 @@
-{}
+{"a49e639efda6a2480d117ae7e9488b42:5bd835b0d6b1d4ada3b9f0db936e82c8":{"statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1},"items":[{"uid":"99425945e4394af4","reportUrl":"http://localhost:8080/job/tesst/10/display/redirect/allure/#testresult/99425945e4394af4","status":"passed","time":{"start":1776228209411,"stop":1776228216270,"duration":6859}}]}}
